@@ -25,10 +25,10 @@ def buscar():
     link2 = pt2[0]
     driver.get(f"{link1.text}{link2.text}")
 
+engine = pyttsx3.init()
+engine.say("Olá, eu sou o Piá diga oque precisa,  chamando ei Piá!")
+engine.runAndWait()
 while True:
-    engine = pyttsx3.init()
-    engine.say("Olá, eu sou o Piá diga oque precisa,  chamando ei Piá!")
-    engine.runAndWait()
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Ouvindo!")
