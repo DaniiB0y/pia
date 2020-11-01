@@ -39,6 +39,6 @@ while True:
         if frase2 == "ei piá":
             buscar()
         else:
-            engine.say("seja educado, cabra! fala ei piá")
+            engine.say("Mas bah tche, me chame! diga ei piá")
             engine.runAndWait()
     # Speech recognition using Google Speech Recognition
